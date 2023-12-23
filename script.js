@@ -1,18 +1,20 @@
-function shakeElement(element) {
-  element.classList.add('shake');
-}
-
 function checkPalindrome() {
   const inputString = document.getElementById('inputString').value;
   const resultElement = document.getElementById('result');
-  const hatWizardImage = document.querySelector('.shake');
+  const hatWizardImage = document.querySelector('.hat-wizard-img');
   const isPalindrome = palindrome(inputString);
 
   resultElement.textContent = isPalindrome
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
 
-    shakeElement(hatWizardImage);
+    if (!isPalindrome) {
+    hatWizardImage.classList.add('shake');
+
+    setTimeout(() => {
+      hatWizardImage.classList.remove('shake');
+    }, 500);
+  }
 }
 
 function palindrome(str) {
