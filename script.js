@@ -8,6 +8,9 @@ function checkPalindrome() {
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
 
+  // Trigger reflow before adding the shake class (force a layout)
+  hatWizardImage.offsetWidth;
+  
   // Add shake animation if it's not a palindrome
   if (!isPalindrome) {
     hatWizardImage.classList.add('shake');
