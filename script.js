@@ -9,7 +9,7 @@ function checkPalindrome() {
     : 'It is not a palindrome.';
 
   
-  if (!isPalindrome) {
+  if (isPalindrome) {
     hatWizardImage.classList.add('shake');
 
     requestAnimationFrame(() => {
