@@ -1,3 +1,11 @@
+function shakeElement(element) {
+  element.classList.add('shake');
+
+  setTimeout(() => {
+    element.classList.remove('shake');
+  }, 500);
+}
+
 function checkPalindrome() {
   const inputString = document.getElementById('inputString').value;
   const resultElement = document.getElementById('result');
@@ -8,11 +16,7 @@ function checkPalindrome() {
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
 
-    hatWizardImage.classList.add('shake');
-
-    requestAnimationFrame(() => {
-      hatWizardImage.classList.remove('shake');
-    });
+    shakeElement(hatWizardImage);
 }
 
 function palindrome(str) {
