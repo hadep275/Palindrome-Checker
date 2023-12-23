@@ -6,6 +6,18 @@ function checkPalindrome() {
   resultElement.textContent = isPalindrome
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
+
+  // Add shake animation if it's not a palindrome
+  if (!isPalindrome) {
+    const hatWizardIcon = document.querySelector('.fas.fa-hat-wizard');
+    hatWizardIcon.classList.add('shake');
+
+    // Remove the shake class after the animation completes
+    setTimeout(() => {
+      hatWizardIcon.classList.remove('shake');
+    }, 500);
+  }
+  
 }
 
 function palindrome(str) {
