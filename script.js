@@ -9,12 +9,12 @@ function checkPalindrome() {
     : 'It is not a palindrome.';
 
   
-  hatWizardImage.addEventListener('animationend', () => {
-    hatWizardImage.classList.remove('shake');
-  }, { once: true });
-
   if (!isPalindrome) {
     hatWizardImage.classList.add('shake');
+
+    requestAnimationFrame(() => {
+      hatWizardImage.classList.remove('shake');
+    });
   }
   
 }
