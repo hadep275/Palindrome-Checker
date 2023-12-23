@@ -8,17 +8,13 @@ function checkPalindrome() {
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
 
-  // Trigger reflow before adding the shake class (force a layout)
-  hatWizardImage.offsetWidth;
   
-  // Add shake animation if it's not a palindrome
+  hatWizardImage.addEventListener('animationend', () => {
+    hatWizardImage.classList.remove('shake');
+  }, { once: true });
+
   if (!isPalindrome) {
     hatWizardImage.classList.add('shake');
-
-    // Remove the shake class after the animation completes
-    setTimeout(() => {
-      hatWizardImage.classList.remove('shake');
-    }, 500);
   }
   
 }
