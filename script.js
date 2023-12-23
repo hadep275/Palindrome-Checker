@@ -6,15 +6,13 @@ function checkPalindrome() {
 
   if (isPalindrome) {
     resultElement.textContent = 'It is a palindrome!';
-    resultElement.style.color = 'green'; // Set color for palindrome case
+    resultElement.style.color = 'green'; 
   } else {
     resultElement.textContent = 'It is not a palindrome.';
-    resultElement.style.color = 'red'; // Set color for not a palindrome case
+    resultElement.style.color = 'red'; 
 
-    // Add and immediately remove the shake class if it's not a palindrome
     hatWizardImage.classList.add('shake');
 
-    // Schedule class removal using setTimeout
     setTimeout(() => {
       hatWizardImage.classList.remove('shake');
     }, 500);
