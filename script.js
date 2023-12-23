@@ -4,12 +4,20 @@ function checkPalindrome() {
   const hatWizardImage = document.querySelector('.hat-wizard-img');
   const isPalindrome = palindrome(inputString);
 
-  resultElement.textContent = isPalindrome
-    ? 'It is a palindrome!'
-    : 'It is not a palindrome.';
+  if (isPalindrome) {
+    resultElement.textContent = 'It is a palindrome!';
+    resultElement.style.color = 'green'; // Set color for palindrome case
+  } else {
+    resultElement.textContent = 'It is not a palindrome.';
+    resultElement.style.color = 'red'; // Set color for not a palindrome case
 
-    if (!isPalindrome) {
+    // Add and immediately remove the shake class if it's not a palindrome
     hatWizardImage.classList.add('shake');
+
+    // Schedule class removal using setTimeout
+    setTimeout(() => {
+      hatWizardImage.classList.remove('shake');
+    }, 500);
   }
 }
 
