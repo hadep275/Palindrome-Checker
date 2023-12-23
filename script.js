@@ -8,15 +8,11 @@ function checkPalindrome() {
     ? 'It is a palindrome!'
     : 'It is not a palindrome.';
 
-  
-  if (isPalindrome) {
     hatWizardImage.classList.add('shake');
 
     requestAnimationFrame(() => {
       hatWizardImage.classList.remove('shake');
     });
-  }
-  
 }
 
 function palindrome(str) {
