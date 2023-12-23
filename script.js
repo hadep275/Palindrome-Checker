@@ -1,7 +1,7 @@
 function checkPalindrome() {
   const inputString = document.getElementById('inputString').value;
   const resultElement = document.getElementById('result');
-  const hatWizardIcon = document.querySelector('.fa-solid.fa-hat-wizard');
+  const hatWizardImage = document.querySelector('.hat-wizard-img');
   const isPalindrome = palindrome(inputString);
 
   resultElement.textContent = isPalindrome
@@ -10,12 +10,11 @@ function checkPalindrome() {
 
   // Add shake animation if it's not a palindrome
   if (!isPalindrome) {
-    const hatWizardIcon = document.querySelector('.fas.fa-hat-wizard');
-    hatWizardIcon.classList.add('shake');
+    hatWizardImage.classList.add('shake');
 
     // Remove the shake class after the animation completes
     setTimeout(() => {
-      hatWizardIcon.classList.remove('shake');
+      hatWizardImage.classList.remove('shake');
     }, 500);
   }
   
