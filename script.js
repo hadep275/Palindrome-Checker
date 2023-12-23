@@ -1,6 +1,7 @@
 function checkPalindrome() {
   const inputString = document.getElementById('inputString').value;
   const resultElement = document.getElementById('result');
+  const hatWizardIcon = document.querySelector('.fa-solid.fa-hat-wizard');
   const isPalindrome = palindrome(inputString);
 
   resultElement.textContent = isPalindrome
