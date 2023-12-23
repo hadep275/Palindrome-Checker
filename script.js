@@ -10,10 +10,6 @@ function checkPalindrome() {
 
     if (!isPalindrome) {
     hatWizardImage.classList.add('shake');
-
-    setTimeout(() => {
-      hatWizardImage.classList.remove('shake');
-    }, 500);
   }
 }
 
