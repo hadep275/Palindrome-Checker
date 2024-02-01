@@ -21,6 +21,7 @@ Check out the live demo: [Palindrome Magic Demo](https://hadep275.github.io/Pali
 ![screencapture-hadep275-github-io-Palindrome-Checker-2023-12-22-19_45_11](https://github.com/hadep275/Palindrome-Checker/assets/65734173/9a481348-1253-4670-94ab-6a6e981e4f38)
 
 
+
 ## How to Use
 
 1. Clone the repository to your local machine.
