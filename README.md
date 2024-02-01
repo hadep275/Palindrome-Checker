@@ -18,6 +18,7 @@ Welcome to Palindrome Magic, where learning about palindromes becomes a magical 
 
 Check out the live demo: [Palindrome Magic Demo](https://hadep275.github.io/Palindrome-Checker/)
 
+
 ![screencapture-hadep275-github-io-Palindrome-Checker-2023-12-22-19_45_11](https://github.com/hadep275/Palindrome-Checker/assets/65734173/9a481348-1253-4670-94ab-6a6e981e4f38)
 
 
